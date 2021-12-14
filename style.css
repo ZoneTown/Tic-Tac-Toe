@@ -1,0 +1,86 @@
+/*Fixes margin and padding of page*/
+*{
+    margin:0;
+    padding:0;
+}
+
+/*Colors h1 and puts space above it*/
+h1{
+    margin-top:60px;
+    color:white;
+}
+
+/*Colors h2*/
+h2{
+    color:white;
+}
+
+#message{
+    margin-bottom:30px;
+}
+
+/*Styles container*/
+.container{
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:black;
+    color:white;
+}
+
+/*Styles button*/
+button{
+    outline: none;
+    border: 4px solid white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: white;
+    color:black;
+}
+
+/*Hover effect for button*/
+button:hover{
+    cursor: pointer;
+    background: rgb(76, 76, 76);
+    color: white;
+}
+
+/*Styles the playing field*/
+.playarea{
+    display: grid;
+    width: 600px;
+    height: 600px;
+    grid-template-columns: auto auto auto;
+}
+
+/*Styles the blocks (spaces for X's and O's*/
+.block{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 3px solid white;
+}
+
+/*Removes all borders around the blocks*/
+#block1,#block2,#block3{
+  border-top: none;
+}
+
+#block1,#block4,#block7{
+  border-left: none;
+}
+
+#block7,#block8,#block9{
+  border-bottom: none;
+}
+
+#block3,#block6,#block9{
+  border-right: none;
+}
